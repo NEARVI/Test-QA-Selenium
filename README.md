@@ -1,4 +1,4 @@
-# pruebaqa
+# prueba QA Selenium
 
 ## Descripción
 Esta es una prueba técnica para el puesto de QA en DATACRM. El objetivo principal de este proyecto es realizar pruebas funcionales automatizadas de la interfaz de búsqueda de Google utilizando **Selenium**. El script está escrito en **JavaScript** y se ejecuta en un entorno de **Node.js**.
@@ -12,3 +12,10 @@ Esta es una prueba técnica para el puesto de QA en DATACRM. El objetivo princip
 - **Selenium**: Para la automatización de la interacción con el navegador.
 - **Node.js**: Como entorno de ejecución para el código JavaScript.
 - **JavaScript**: Lenguaje de programación utilizado para escribir el script de prueba.
+  
+## Video demostrativo
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=k2SOf9CfcCM" target="_blank">
+    <img src="https://img.youtube.com/vi/k2SOf9CfcCM/0.jpg" alt="Video de PruebaQA" style="width: 60%; height: auto;">
+  </a>
+</p>
