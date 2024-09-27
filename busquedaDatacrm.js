@@ -7,8 +7,8 @@ async function buscarDatacrm() {
     // Configura las opciones de Chrome para ejecutar en modo sin interfaz gráfica (headless)
     let options = new chrome.Options();
     options.addArguments('--headless'); // Ejecuta Chrome en modo headless para evitar abrir una ventana gráfica
-    options.addArguments('--no-sandbox'); // Desactiva el modo sandbox para mejorar la compatibilidad
-    options.addArguments('--disable-dev-shm-usage'); // Previene problemas en entornos de contenedor como GitHub Actions
+    options.addArguments('--no-sandbox'); // Desactiva el modo sandbox para mejorar la compatibilidad en entornos CI
+    options.addArguments('--disable-dev-shm-usage'); // Previene problemas de memoria en entornos de contenedor como GitHub Actions
 
     // Inicializa el navegador Chrome con las opciones configuradas
     let driver = await new Builder()
@@ -25,7 +25,7 @@ async function buscarDatacrm() {
             let aceptarCookies = await driver.findElement(By.id('L2AGLb'));
             await aceptarCookies.click(); // Hace clic en el botón para aceptar cookies
         } catch (e) {
-            // Si no aparece el botón, se ignora el error y se continúa con el flujo
+            // Ignora el error si el botón no está presente y continúa con el flujo
         }
 
         // Localiza el campo de búsqueda de Google
